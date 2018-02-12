@@ -64,3 +64,5 @@ captures/
 target/
 
 /keystore.properties
+
+app/google-services.json

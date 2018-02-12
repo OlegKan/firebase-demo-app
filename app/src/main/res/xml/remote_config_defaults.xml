@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright (C) 2018 Oleg Kan
   ~
@@ -14,10 +15,9 @@
   ~ limitations under the License.
   -->
 
-<resources>
-    <string name="app_name">firebase demo app</string>
-    <string name="activity_remote_config">Remote config</string>
-    <string name="remote_config">Remote Config</string>
-    <string name="remote_config_enabled">Remote config enabled</string>
-    <string name="refresh">refresh</string>
-</resources>
+<defaultsMap>
+    <entry>
+        <key>remote_config_enabled</key>
+        <value>false</value>
+    </entry>
+</defaultsMap>

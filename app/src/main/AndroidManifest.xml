@@ -30,6 +30,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         >
+
         <activity
             android:name=".MainActivity"
             />
@@ -44,6 +45,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
+
+        <activity
+            android:label="@string/activity_remote_config"
+            android:name=".remoteconfig.RemoteConfigActivity"
+            android:parentActivityName=".MainActivity"
+            />
+
     </application>
 
 </manifest>
