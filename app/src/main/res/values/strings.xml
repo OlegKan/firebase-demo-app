@@ -16,8 +16,14 @@
 
 <resources>
     <string name="app_name">firebase demo app</string>
+    <string name="activity_notification">Notification</string>
     <string name="activity_remote_config">Remote config</string>
-    <string name="remote_config">Remote Config</string>
+    <string name="launch_notification">Notification</string>
+    <string name="launch_remote_config">Remote Config</string>
     <string name="remote_config_enabled">Remote config enabled</string>
     <string name="refresh">refresh</string>
+    <string name="send_notification">Send notification</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">News</string>
 </resources>

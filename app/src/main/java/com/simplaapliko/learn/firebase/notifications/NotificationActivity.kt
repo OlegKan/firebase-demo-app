@@ -14,32 +14,24 @@
  * limitations under the License.
  */
 
-package com.simplaapliko.learn.firebase
+package com.simplaapliko.learn.firebase.notifications
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.simplaapliko.learn.firebase.notifications.NotificationActivity
-import com.simplaapliko.learn.firebase.remoteconfig.RemoteConfigActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.simplaapliko.learn.firebase.R
+import kotlinx.android.synthetic.main.activity_notification.*
 
-class MainActivity : AppCompatActivity() {
+class NotificationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_notification)
         bindEvents()
     }
 
     private fun bindEvents() {
-        remote_config.setOnClickListener({
-            val intent = Intent(this, RemoteConfigActivity::class.java)
-            startActivity(intent)
-        })
-
-        notification.setOnClickListener({
-            val intent = Intent(this, NotificationActivity::class.java)
-            startActivity(intent)
+        send_notification.setOnClickListener({
+            NotificationFactory.sendNotification(this, "test notification")
         })
     }
 }
